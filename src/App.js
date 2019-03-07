@@ -9,7 +9,7 @@ import Header from './components/header_footer/Header';
 export default class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{height: '1500px', backgroundColor: 'green'}}>
         <Header/>
       </div>
     )
