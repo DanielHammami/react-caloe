@@ -4,15 +4,20 @@ import './scss/styles.scss'
 
 
 // Components
-import Header from './components/header_footer/Header';
-import Featured from './components/featured';
+import Header from './components/header_footer/Header'
+import Featured from './components/featured'
+import CaloeNfo from './components/caloeNfo'
+import Highlights from './components/highlights'
+
 
 export default class App extends React.Component {
   render() {
     return (
-      <div className="App" style={{height: '1500px', backgroundColor: 'green'}}>
+      <div className="App" style={{height: '1500px', backgroundColor: '$white'}}>
         <Header/>
         <Featured/>
+        <Highlights/>
+        <CaloeNfo/>
       </div>
     )
   }
