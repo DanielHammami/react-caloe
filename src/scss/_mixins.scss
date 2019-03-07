@@ -1,0 +1,161 @@
+/*----------------------------*/
+// @file    : mixins.scss
+// @date    : Janvier 2019
+// @creator : Daniel HAMMAMI
+/*----------------------------*/
+
+/*
+/ Flexbox
+*/
+
+@mixin display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* flex-direction */
+@mixin flex-direction-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+@mixin flex-direction-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+@mixin flex-direction-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@mixin flex-direction-column-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+/* flex-wrap */
+@mixin flex-wrap-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@mixin flex-wrap-no-wrap {
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap;
+}
+
+@mixin flex-wrap-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+/* justify-content */
+@mixin justify-content-flex-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+@mixin justify-content-flex-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@mixin justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin justify-content-space-between {
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+
+@mixin justify-content-space-around {
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+}
+
+@mixin justify-content-space-evenly {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+/* align-items */
+@mixin align-items-flex-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+@mixin align-items-flex-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+@mixin align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@mixin align-items-stretch {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+@mixin align-items-baseline {
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+/* align-content */
+@mixin align-content-flex-start {
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+@mixin align-content-flex-end {
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+}
+
+@mixin align-content-center {
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+@mixin align-content-stretch {
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+
+@mixin align-content-space-between {
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+}
+
+@mixin align-content-space-around {
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+}
+
