@@ -9,6 +9,8 @@ import Featured from './components/featured'
 import CaloeNfo from './components/caloeNfo'
 import Highlights from './components/highlights'
 import LastConcerts from './components/last_concerts'
+import Location from './components/location'
+import Footer from './components/header_footer/Footer';
 
 export default class App extends React.Component {
   render() {
@@ -18,7 +20,9 @@ export default class App extends React.Component {
         <Featured/>
         <Highlights/>
         <CaloeNfo/>
+        <Location/>
         <LastConcerts/>
+        <Footer/>
       </div>
     )
   }
