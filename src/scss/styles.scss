@@ -13,6 +13,28 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.font_righteous {
+    font-family: 'Righteous', cursive;
+}
+
+.bck_black {
+    background: #3c3c3c;
+}
+.bck_white {
+    background: $white;
+}
+.bck_red {
+    background: #ff4800;
+}
+.bck_yellow {
+    background: #ffa800;
+}
+
+.iconImage {
+    width: 20px;
+    margin-right: 10px;
+}
+
 .center_wrapper {
     margin: 0 auto;
     width: 75%;
@@ -119,6 +141,15 @@ body {
 
         img {
             width: 100%;
+        }
+    }
+
+    .lastconcerts_image {
+        text-align: center;
+
+        img {
+            margin: 20px 0;
+            width: 60%;
         }
     }
 
