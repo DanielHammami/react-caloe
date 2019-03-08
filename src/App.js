@@ -1,6 +1,6 @@
 import React from 'react'
-import './resources/styles.css'
 import './scss/styles.scss'
+import { Element } from 'react-scroll'
 
 
 // Components
@@ -16,12 +16,30 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App" style={{height: '1500px', backgroundColor: '$white'}}>
-        <Header/>
-        <Featured/>
-        <Highlights/>
-        <CaloeNfo/>
-        <Location/>
-        <LastConcerts/>
+        <Element name='Accueil'>
+          <Header/>
+        </Element>
+
+        <Element name='Accueil'>
+          <Featured/>
+        </Element>
+
+        <Element name='bio'>
+          <Highlights/>
+        </Element>
+       
+        <Element name='Actuellement'>
+          <CaloeNfo/>
+        </Element>
+
+        <Element name='Adresse'>
+          <Location/>
+        </Element>
+
+        <Element name='Précédemment'>
+          <LastConcerts/>
+        </Element>
+        
         <Footer/>
       </div>
     )
